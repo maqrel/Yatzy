@@ -17,7 +17,11 @@ public class Die {
     public Die() {
     }
 
+    public int getEyes() {
+        return eyes;
+    }
+
     public void roll() {
-        //TODO: implement roll method.
+        eyes = (int) (random.nextDouble(1) * 6 + 1);
     }
 }

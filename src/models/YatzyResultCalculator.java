@@ -4,13 +4,13 @@ package models;
  * Used to calculate the score of throws with 5 dice
  */
 public class YatzyResultCalculator {
-
+    private Die[] dice;
     /**
      *
      * @param dice
      */
     public YatzyResultCalculator(Die[] dice) {
-        //TODO: implement YatzyResultCalculator constructor.
+        this.dice = dice;
     }
 
     /**
@@ -19,8 +19,14 @@ public class YatzyResultCalculator {
      * @return the score for specified eye value
      */
     public int upperSectionScore(int eyes) {
-        //TODO: Implement upperSectionScore method.
-        return 0;
+        int sum = 0;
+        for (Die die : dice) {
+            if(die.getEyes() == eyes) {
+                sum += eyes;
+            }
+        }
+        return sum;
+
     }
 
     public int onePairScore() {
