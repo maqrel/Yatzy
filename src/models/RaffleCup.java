@@ -5,6 +5,7 @@ public class RaffleCup {
 
     public RaffleCup() {
         throwDice();
+        System.out.println();
     }
 
     public void throwDice() {

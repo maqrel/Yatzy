@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class YatzyResultsCalculatorTests {
     @Test
     public void upperSectionScoreTests() {
+        System.out.println();
         YatzyResultCalculator sut = new YatzyResultCalculator(new Die[]{
                 new Die(3),
                 new Die(1),

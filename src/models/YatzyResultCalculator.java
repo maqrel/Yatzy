@@ -11,6 +11,7 @@ public class YatzyResultCalculator {
      */
     public YatzyResultCalculator(Die[] dice) {
         this.dice = dice;
+        System.out.println();
     }
 
     /**

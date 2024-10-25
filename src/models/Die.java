@@ -23,5 +23,6 @@ public class Die {
 
     public void roll() {
         eyes = (int) (random.nextDouble(1) * 6 + 1);
+        System.out.println();
     }
 }
