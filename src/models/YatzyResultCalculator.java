@@ -1,5 +1,6 @@
 package models;
 
+
 /**
  * Used to calculate the score of throws with 5 dice
  */
