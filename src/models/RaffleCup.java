@@ -4,15 +4,14 @@ public class RaffleCup {
     private Die[] dice = new Die[5];
 
     public RaffleCup() {
-        throwDice();
-        System.out.println();
+        for (int index = 0; index < dice.length; index++) {
+            dice[index] = new Die();
+        }
     }
 
     public void throwDice() {
-        for(int index = 0; index < dice.length; index++) {
-            Die die = new Die();
+        for (Die die : dice) {
             die.roll();
-            dice[index] = die;
         }
     }
 

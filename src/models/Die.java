@@ -6,23 +6,22 @@ public class Die {
     private int eyes = 0;
     private final Random random = new Random();
 
-    /**
-     * Creates a new Die object, with face set to eyes. Used for test purpose
-     * @param eyes value should be between 1 and 6
-     */
+    //Opretter en terning med bestemt antal øjne
     public Die(int eyes) {
         this.eyes = eyes;
     }
 
+    //Opretter en terning
     public Die() {
     }
 
+    //Returner antal øjne
     public int getEyes() {
         return eyes;
     }
 
+    //Ruller terningen
     public void roll() {
         eyes = (int) (random.nextDouble(1) * 6 + 1);
-        System.out.println();
     }
 }
